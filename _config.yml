@@ -20,7 +20,7 @@ resume-url: https://drive.google.com/file/d/14VxUf9nqY16Ft-m5Inp42VZ-s4OQnQJW/vi
 url: http://youngcadam.github.io
 # your url: https://USERNAME.github.io
 
-permalink: /:title/
+permalink: /:title
 
 # To enable google analytics, supply your token below
 # analytics-google: 'UA-MYANALYTICS'
