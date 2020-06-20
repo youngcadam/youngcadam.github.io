@@ -3,7 +3,7 @@ title: About
 layout: page
 ---
 
-![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
+<h2>About</h2>
 
 
 <p>I am a senior in Mathematics of Computation from UCLA. I am a passionate learner with interests in machine learning, physics, and . At UCLA's Center for Vision, Cognition, Learning, and Autonomy, I conducted research on reinforcement learning with an emphasis on prediction by planning in an autonomous driving scenario. </p>

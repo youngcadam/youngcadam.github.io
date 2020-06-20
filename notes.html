@@ -2,26 +2,8 @@
 layout: page
 title: Notes
 ---
-<section class="list">
-    {% if site.posts.size == 0 %}
-        <p class="text-center">Nothing published yet!</p>
-    {% elsif site.pagination.enabled %}
-        {% for post in paginator.posts %}
-            {% if post.category == 'blog' %}
-                {% if post.hidden != true %}
-                    {% include blog-post.html %}
-                {% endif %}
-            {% endif %}
-        {% endfor %}
+<div class="half">
+    <h2>Coming Soon™</h2>
 
-        {% include pagination.html%}
-    {% else %}
-        {% for post in site.posts %}
-            {% if post.category == 'note' %}
-                {% if post.hidden != true %}
-                    {% include blog-post.html %}
-                {% endif %}
-            {% endif %}
-        {% endfor %}
-    {% endif %}
-</section>
+    <p>In the future I will post my notes from selected coursework.</p>
+</div>
