@@ -7,7 +7,8 @@ tag:
 category: note
 author: adam
 ---
+<div class="half">
+	<h2>Overview</h2>
 
-## Summary:
-
-In the future I will post my notes from selected coursework.
+	<p>In the future I will post my notes from selected coursework.</p>
+</div>
