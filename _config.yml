@@ -1,7 +1,7 @@
 # main text of home
 name: Adam Young
 title: Adam Young
-bio:  UCLA Math Undergraduate
+bio:  UCLA Math student researching planning-based prediction in autonomous driving scenario.
 
 # twitter summary info
 description: A personal website and blog.
@@ -56,7 +56,7 @@ email: youngcadam@g.ucla.edu
 authors:
   adam:
     name: Adam Young
-    bio: UCLA Math Undergraduate
+    bio: UCLA Math student researching planning-based prediction in autonomous driving scenario.
     external-image: false
     picture: assets/images/profile.jpg
     linkedin: youngcadam

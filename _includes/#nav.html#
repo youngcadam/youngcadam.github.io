@@ -2,9 +2,13 @@
 <div class="color1">
     <div class="text-right">
         <nav class="{% if page.title == "Home" %}nav-home{% else %}nav{% endif %}">
-<<<<<<< variant A
+<<<<<<< HEAD
             <ul class="list"> 
->>>>>>> variant B
+                <li class="item">
+                    <a class="link" href="{{ site.url }}/">Home</a>
+                </li>
+               
+=======
             <ul class="list">
                 {% if page.title != "Home" %}    
                     <li class="item">
@@ -12,27 +16,28 @@
                     </li>
                 {% endif %}
                 
-======= end
                 <li class="item">
-<<<<<<< variant A
-                    <a class="link" href="{{ site.url }}/">Home</a>
+                    <a class="link" href="{{ site.url }}/blog">Blog</a>
                 </li>
-               
+                
+>>>>>>> origin/master
                 <li class="item">
                     <a class="link" href="{{ site.url }}/note">Notes</a>
->>>>>>> variant B
-                    <a class="link" href="{{ site.url }}/blog">Blog</a>
-======= end
                 </li>
                 
                 <li class="item">
+<<<<<<< HEAD
                     <a class="link" href="{{ site.url }}/note">Notes</a>
                 </li>
                 
                 <li class="item">
                     <a class="link" href="./resume.pdf" target="_blank">Résumé</a>
                 </li>
+=======
+                    <a class="link" href="./resume.pdf" target="_blank">Résumé</a>
+                </li>
+>>>>>>> origin/master
             </ul>
         </nav>
     </div>
-</div>
+fff</div>
