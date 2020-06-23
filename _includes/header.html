@@ -1,9 +1,7 @@
 {% include nav.html %}
-{% if page.title == "Home"%}
-    {% assign bigHeader = true %}
-{% endif %}
 
-{% if bigHeader == true %}
+
+{% if page.title == "Home"%}
     <header class="header-home">
         {% if site.about %}
             <a class="link" href="{{ site.url }}">
@@ -20,22 +18,38 @@
 
         
     </header>
-{% else %}
-    <header class="header">
+{% endif %}
+
+{% if page.title == "Notes"%}
+    <header class="header-notes">
         {% if site.about %}
             <a class="link" href="{{ site.url }}">
-                <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+                <img class="selfie" alt="{{ site.name }}" src="../assets/notes.png"" />
             </a>
         {% else %}
             <span class="link">
-                <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+                <img class="selfie" alt="{{ site.name }}" src="../assets/notes.png" />
             </span>
         {% endif %}
-
-        <h1 class="title">{{ site.name }}</h1>
-        <h2 class="description">{{ site.bio }}</h2>
-
         
     </header>
 {% endif %}
+
+{% if page.title == "Blog"%}
+    <header class="header-blog">
+        {% if site.about %}
+            <a class="link" href="{{ site.url }}">
+                <img class="selfie" alt="{{ site.name }}" src="../assets/blog.png"" />
+            </a>
+        {% else %}
+            <span class="link">
+                <img class="selfie" alt="{{ site.name }}" src="../assets/blog.png" />
+            </span>
+        {% endif %}
+        
+    </header>
+{% endif %}
+
+
+
 

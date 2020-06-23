@@ -1,4 +1,4 @@
-.header, .header-home
+.header-home, .header-notes, .header-blog
     display: block
     width: 50%
     margin: 0 auto
@@ -7,13 +7,12 @@
     z-index: 99
 
     > .link > .selfie
-        width: 150px
-        height: 150px
         margin: -90px 0 15px
         border-radius: 100%
+        border: solid
         transition: all .2s
         opacity: 1
-        color: #98c1d9
+        color: #313d48
 
         &:hover
             box-shadow: 0 0px 4px 0 rgba(0,0,0,0.18), 0 0px 12px 0 rgba(0,0,0,0.15)
@@ -28,9 +27,26 @@
         font-weight: 300
         font-style: normal
         color: $gama
-        width: 70%
+        width: 40%
         margin: 0 auto 30px
 
         // if you put some links in your bio. ;)
         a
             font-weight: 200
+
+.header-home
+    > .link > .selfie
+        width: 150px
+        height: 150px
+
+.header-notes
+    > .link > .selfie
+        width: 150px
+        height: 150px
+        background-color: #d9b59b
+
+.header-blog
+    > .link > .selfie
+        width: 150px
+        height: 150px
+        
