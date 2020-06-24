@@ -3,69 +3,68 @@
 
 
 
-.notespage
+.row1, .row2
 	margin: 0em auto
-	width: 70%
+	width: 80%
+	padding: 0 0
 	display: flex
-	flex-direction: row
-	padding: 0 0 
 
-	.row
-		align-items: flex-start
-
-		.category
-			vertical-align: top
-			display: inline-block
-			padding: 10em 0
-			
-			.image
-				width: 40%
-				display: inline-block
-				margin: 0 auto
-				
-			.imagecaption
-				display: block
-				text-align: center
-
+	.itemcontainer
+		display: inline-flex
 
 		.noteitem
-			display: inline-block
+			display: inline
+			flex: 0 0 11em
 			padding: 0 1em
-			margin: 3em .5em
-			background-color: #98c1d9
+			margin: 3em 1em
+			background-color: #3d5a80
+			color: #bfbfbf
+			text-align: center
+			h3
+				color: #FFFFFF
+
 			p
-				text-align: center
 				padding: 0 0
 
 			img
 				display: block
 				margin: 1em auto
 
-	.row2
+
+.category
+	padding: 6em 0
+	max-width: 25%
+	display: inline-block
+
+	.image
+		display: inline-block
+		margin: 0 auto
 		
-
-		.category
-			vertical-align: top
-			display: inline-block
-			padding: 5em 0
-			
-			.image
-				width: 40%
-				display: inline-block
-				margin: 0 auto
-				
-			.imagecaption
-				display: block
-				text-align: center
+	.imagecaption
+		display: block
+		text-align: center	
 
 
-		.noteitem
-			display: inline-block
-			padding: 0 3em
+.notespage
+	hr
+		width: 90%
+		margin: 0 auto
+		height: .1em
+		background: #bfbfbf
 
-			p
-				text-align: center
 
-			img
-				display: block
-				margin: 0 auto
+.row1
+	.itemcontainer
+		margin: 1em 
+
+.row2
+	padding-left: 9em
+
+	.category
+		max-width: 13%
+		padding-right: 4em
+
+
+
+
+		
