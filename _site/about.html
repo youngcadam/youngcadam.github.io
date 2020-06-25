@@ -278,6 +278,8 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 @keyframes fade-in-down { 0% { opacity: 0; transform: translateY(-10px); }
   100% { opacity: 1; transform: translateY(0); } }
+@font-face { font-family: "Roboto"; src: url("../../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-Thin.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-BlackItalic.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-Italic.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-Medium.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-Black.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-LightItalic.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-BoldItalic.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-Light.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-ThinItalic.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-Bold.ttf") format("truetype"); }
+@font-face { font-family: "Open Sans"; src: url("../../fonts/Open_Sans/OpenSans-ExtraBold.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-BoldItalic.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-Italic.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-LightItalic.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-SemiBold.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-Light.ttf") format("truetype"); }
 .home > .list, .blog > .list, .projects > .list { border-top: 1px solid #ededed; margin-top: 30px; padding-top: 40px; position: relative; }
 .home > .list:before, .blog > .list:before, .projects > .list:before { display: block; content: " "; width: 7px; height: 7px; border: #ededed 1px solid; position: absolute; top: -5px; left: 50%; margin-left: -5px; background: #FFF; box-shadow: #FFF 0 0 0 5px; border-radius: 3px; }
 
@@ -323,23 +325,23 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 .line-break { width: 100%; }
 
-.row1, .row2 { margin: 0em auto; width: 80%; padding: 0 0; display: flex; }
-.row1 .itemcontainer, .row2 .itemcontainer { display: inline-flex; }
-.row1 .itemcontainer .noteitem, .row2 .itemcontainer .noteitem { display: inline; flex: 0 0 11em; padding: 0 1em; margin: 3em 1em; background-color: #3d5a80; color: #bfbfbf; text-align: center; }
-.row1 .itemcontainer .noteitem h3, .row2 .itemcontainer .noteitem h3 { color: #FFFFFF; }
-.row1 .itemcontainer .noteitem p, .row2 .itemcontainer .noteitem p { padding: 0 0; }
-.row1 .itemcontainer .noteitem img, .row2 .itemcontainer .noteitem img { display: block; margin: 1em auto; }
+.ucla, .textbook { margin: 0em auto; width: 80%; padding: 0 0; display: flex; }
+.ucla .itemcontainer, .textbook .itemcontainer { display: inline-flex; flex-flow: row wrap; justify-content: space-evenly; }
+.ucla .itemcontainer .noteitem, .textbook .itemcontainer .noteitem { display: inline; flex: 0 1 22em; padding: 0 0.5em; margin: 3em 2em; background-color: #3d5a80; color: #bfbfbf; text-align: center; }
+.ucla .itemcontainer .noteitem .itemheader, .textbook .itemcontainer .noteitem .itemheader { color: #FFFFFF; margin: 0.5em 0 -0.2em; font-size: 2.5em; font-family: "Roboto"; }
+.ucla .itemcontainer .noteitem p, .textbook .itemcontainer .noteitem p { padding: 0 0; margin: 0; }
+.ucla .itemcontainer .noteitem .classname, .textbook .itemcontainer .noteitem .classname { color: #FFFFFF; font-size: 1.3em; font-family: "Open Sans"; }
+.ucla .itemcontainer .noteitem .classimg, .textbook .itemcontainer .noteitem .classimg { width: 8em; height: 8em; }
+.ucla .itemcontainer .noteitem img, .textbook .itemcontainer .noteitem img { display: block; margin: 1em auto; padding-bottom: 0.3em; }
+.ucla .itemcontainer .noteitem .term, .textbook .itemcontainer .noteitem .term { color: #bbb; font-family: "Open Sans"; }
 
-.category { padding: 6em 0; max-width: 25%; display: inline-block; }
-.category .image { display: inline-block; margin: 0 auto; }
+.category { max-width: 25%; margin: auto; }
+.category .image { padding-top: 1em; margin: 2em auto; }
 .category .imagecaption { display: block; text-align: center; }
 
 .notespage hr { width: 90%; margin: 0 auto; height: 0.1em; background: #bfbfbf; }
 
-.row1 .itemcontainer { margin: 1em; }
-
-.row2 { padding-left: 9em; }
-.row2 .category { max-width: 13%; padding-right: 4em; }
+.ucla .itemcontainer { margin: 1em; }
 
 .author { padding: 3rem 0; border-bottom: 1px solid #ededed; border-top: 1px solid #ededed; max-width: 100%; margin: 4rem auto 0; }
 .author > .toleft > .selfie { width: 90%; border-radius: 100%; }

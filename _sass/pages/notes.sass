@@ -3,7 +3,7 @@
 
 
 
-.row1, .row2
+.ucla, .textbook
 	margin: 0em auto
 	width: 80%
 	padding: 0 0
@@ -11,34 +11,56 @@
 
 	.itemcontainer
 		display: inline-flex
+		flex-flow: row wrap
+		justify-content: space-evenly
 
 		.noteitem
 			display: inline
-			flex: 0 0 11em
-			padding: 0 1em
-			margin: 3em 1em
+			flex: 0 1 22em
+			padding: 0 .5em
+			margin: 3em 2em
 			background-color: #3d5a80
 			color: #bfbfbf
 			text-align: center
-			h3
+
+			.itemheader
 				color: #FFFFFF
+				margin: .5em 0 -.2em
+				font-size: 2.5em
+				font-family: "Roboto"
 
 			p
 				padding: 0 0
+				margin: 0
+
+			.classname
+				color: #FFFFFF
+				font-size: 1.3em
+				font-family: "Open Sans"
+
+
+			.classimg
+				width: 8em
+				height: 8em
+
 
 			img
 				display: block
 				margin: 1em auto
+				padding-bottom: .3em
+
+			.term
+				color: #bbb
+				font-family: "Open Sans"
 
 
 .category
-	padding: 6em 0
 	max-width: 25%
-	display: inline-block
+	margin: auto
 
 	.image
-		display: inline-block
-		margin: 0 auto
+		padding-top: 1em
+		margin: 2em auto
 		
 	.imagecaption
 		display: block
@@ -53,16 +75,11 @@
 		background: #bfbfbf
 
 
-.row1
+.ucla
 	.itemcontainer
 		margin: 1em 
 
-.row2
-	padding-left: 9em
 
-	.category
-		max-width: 13%
-		padding-right: 4em
 
 
 

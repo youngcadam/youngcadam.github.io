@@ -278,6 +278,8 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 @keyframes fade-in-down { 0% { opacity: 0; transform: translateY(-10px); }
   100% { opacity: 1; transform: translateY(0); } }
+@font-face { font-family: "Roboto"; src: url("../../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-MediumItalic.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-Thin.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-BlackItalic.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-Italic.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-Medium.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-Black.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-LightItalic.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-BoldItalic.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-Light.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-ThinItalic.ttf") format("truetype"); src: url("../../fonts/Roboto/Roboto-Bold.ttf") format("truetype"); }
+@font-face { font-family: "Open Sans"; src: url("../../fonts/Open_Sans/OpenSans-ExtraBold.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-BoldItalic.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-Italic.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-LightItalic.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-SemiBold.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf") format("truetype"); src: url("../../fonts/Open_Sans/OpenSans-Light.ttf") format("truetype"); }
 .home > .list, .blog > .list, .projects > .list { border-top: 1px solid #ededed; margin-top: 30px; padding-top: 40px; position: relative; }
 .home > .list:before, .blog > .list:before, .projects > .list:before { display: block; content: " "; width: 7px; height: 7px; border: #ededed 1px solid; position: absolute; top: -5px; left: 50%; margin-left: -5px; background: #FFF; box-shadow: #FFF 0 0 0 5px; border-radius: 3px; }
 
@@ -323,23 +325,23 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 .line-break { width: 100%; }
 
-.row1, .row2 { margin: 0em auto; width: 80%; padding: 0 0; display: flex; }
-.row1 .itemcontainer, .row2 .itemcontainer { display: inline-flex; }
-.row1 .itemcontainer .noteitem, .row2 .itemcontainer .noteitem { display: inline; flex: 0 0 11em; padding: 0 1em; margin: 3em 1em; background-color: #3d5a80; color: #bfbfbf; text-align: center; }
-.row1 .itemcontainer .noteitem h3, .row2 .itemcontainer .noteitem h3 { color: #FFFFFF; }
-.row1 .itemcontainer .noteitem p, .row2 .itemcontainer .noteitem p { padding: 0 0; }
-.row1 .itemcontainer .noteitem img, .row2 .itemcontainer .noteitem img { display: block; margin: 1em auto; }
+.ucla, .textbook { margin: 0em auto; width: 80%; padding: 0 0; display: flex; }
+.ucla .itemcontainer, .textbook .itemcontainer { display: inline-flex; flex-flow: row wrap; justify-content: space-evenly; }
+.ucla .itemcontainer .noteitem, .textbook .itemcontainer .noteitem { display: inline; flex: 0 1 22em; padding: 0 0.5em; margin: 3em 2em; background-color: #3d5a80; color: #bfbfbf; text-align: center; }
+.ucla .itemcontainer .noteitem .itemheader, .textbook .itemcontainer .noteitem .itemheader { color: #FFFFFF; margin: 0.5em 0 -0.2em; font-size: 2.5em; font-family: "Roboto"; }
+.ucla .itemcontainer .noteitem p, .textbook .itemcontainer .noteitem p { padding: 0 0; margin: 0; }
+.ucla .itemcontainer .noteitem .classname, .textbook .itemcontainer .noteitem .classname { color: #FFFFFF; font-size: 1.3em; font-family: "Open Sans"; }
+.ucla .itemcontainer .noteitem .classimg, .textbook .itemcontainer .noteitem .classimg { width: 8em; height: 8em; }
+.ucla .itemcontainer .noteitem img, .textbook .itemcontainer .noteitem img { display: block; margin: 1em auto; padding-bottom: 0.3em; }
+.ucla .itemcontainer .noteitem .term, .textbook .itemcontainer .noteitem .term { color: #bbb; font-family: "Open Sans"; }
 
-.category { padding: 6em 0; max-width: 25%; display: inline-block; }
-.category .image { display: inline-block; margin: 0 auto; }
+.category { max-width: 25%; margin: auto; }
+.category .image { padding-top: 1em; margin: 2em auto; }
 .category .imagecaption { display: block; text-align: center; }
 
 .notespage hr { width: 90%; margin: 0 auto; height: 0.1em; background: #bfbfbf; }
 
-.row1 .itemcontainer { margin: 1em; }
-
-.row2 { padding-left: 9em; }
-.row2 .category { max-width: 13%; padding-right: 4em; }
+.ucla .itemcontainer { margin: 1em; }
 
 .author { padding: 3rem 0; border-bottom: 1px solid #ededed; border-top: 1px solid #ededed; max-width: 100%; margin: 4rem auto 0; }
 .author > .toleft > .selfie { width: 90%; border-radius: 100%; }
@@ -521,9 +523,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 			<p>Here are a collection of my notes from courses at UCLA, as well as from a few various textbooks that I have read throughout my academic career.</p>
 		</div>
 	<div class="notespage">
-		<!-- frst row -->
-	  	<div class="row1">
-	  		<!-- category of notes -->
+		<!-- category of notes -->
 	  		<div class="category">
 		  		<div class="image">
 		  			 <img src="./assets/royce.png" alt="Error loading graphic!">
@@ -532,15 +532,182 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 			  		</div>
 			  	</div>
 	  		</div>
-
+		<!-- ucla coursework -->
+	  	<div class="ucla">
 	  		<div class="itemcontainer">
 		  		<!--notes -->
 		  		<div class="noteitem">
-		  			<h3 style="text-align:center;margin:.5em 0;">CS 111</h3> 
-		  			Operating Systems Principles
-		  			<img src="../assets/cs.png" width="80px" height="80px">
-		  			<a href="https://drive.google.com/drive/folders/10eHmiX6FZS9Zs1p_0CpZb6LWOTiX1z9Q?usp=sharing">
-		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0;width:40px;height:40px;">
+		  			<h3 class="itemheader" style="text-align:center;">CS 31</h3> 
+		  			<p class="classname">Intro to Computer Science I</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/cs.png">
+		  			<p class="term">Fall '16 with Prof. David Smallberg</p> 
+		  			<a target=”_blank” href="https://drive.google.com/drive/folders/0B1ZqzuNJXktKaHlNel9ETTZDMnM?usp=sharing">
+		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0;width:3em;height:3em;">
+		  			</a>
+		  		</div>
+
+		  		<div class="noteitem">
+		  			<h3 class="itemheader" style="text-align:center;">CS 32</h3> 
+		  			<p class="classname">Intro to Computer Science II</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/cs.png">
+		  			<p class="term">Spring '17 with Prof. David Smallberg</p> 
+		  			<a target=”_blank” href="https://drive.google.com/drive/folders/0B1ZqzuNJXktKeF9aLXc2SkRtWEk?usp=sharing">
+		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0 .5em;width:3em;height:3em;">
+		  			</a>
+		  		</div>
+
+		  		<div class="noteitem">
+		  			<h3 class="itemheader" style="text-align:center;">CS 33</h3> 
+		  			<p class="classname">Computer Organization</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/cs.png">
+		  			<p class="term">Spring '18 with Prof. Glenn Reinman</p> 
+		  			<a target=”_blank” href="https://drive.google.com/drive/folders/1okGG2tEN3FwnN-E2SqSiYnyY75HJD40Z?usp=sharing">
+		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0 .5em;width:3em;height:3em;">
+		  			</a>
+		  		</div>
+
+		  		<div class="noteitem">
+		  			<h3 class="itemheader" style="text-align:center;">CS 35L</h3> 
+		  			<p class="classname">Software Construction Laboratory</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/cs.png">
+		  			<p class="term">Spring '18 with Prof. Paul Eggert</p> 
+		  			<a href="#" style="padding:0 0 .5em;width:3em;height:3em;">
+		  			</a>
+		  		</div>
+
+		  		<div class="noteitem">
+		  			<h3 class="itemheader" style="text-align:center;">CS 111</h3> 
+		  			<p class="classname">Operating Systems Principles</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/cs.png">
+		  			<p class="term">Summer '19 with Prof. Peter Reiher</p> 
+		  			<a target=”_blank” href="https://drive.google.com/drive/folders/1fnbnUk8B6XW7N8RNX3gbDPa9-UhFDkOZ?usp=sharing">
+		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0;width:3em;height:3em;">
+		  			</a>
+		  		</div>
+
+		  		<div class="noteitem">
+		  			<h3 class="itemheader" style="text-align:center;">CS 180</h3> 
+		  			<p class="classname">Algorithms and Complexity</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/cs.png">
+		  			<p class="term">Fall '17 with Prof. Majid Sarrafzadeh</p> 
+		  			<a target=”_blank” href="https://drive.google.com/file/d/1UK8K7K_DJX0S_ms9Y3rnhxuM7gIJnhWR/view?usp=sharing">
+		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0;width:3em;height:3em;">
+		  			</a>
+		  		</div>
+
+		  		<div class="noteitem">
+		  			<h3 class="itemheader" style="text-align:center;">CS 181</h3> 
+		  			<p class="classname">Languages and Automata Theory</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/cs.png">
+		  			<p class="term">Winter '20 with Prof. Alexander Sherstov</p> 
+		  			<a target=”_blank” href="https://drive.google.com/drive/folders/17ZSUJEIS_zjMLvpWuKn9oGQY9v5ISqrA?usp=sharing">
+		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0;width:3em;height:3em;">
+		  			</a>
+		  		</div>
+
+		  		<div class="noteitem">
+		  			<h3 class="itemheader" style="text-align:center;">MATH 131A</h3> 
+		  			<p class="classname">Analysis</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/math.png">
+		  			<p class="term">Fall '17 with Prof. Michael Hitrik</p> 
+		  			<a target=”_blank” href="https://drive.google.com/drive/folders/0B1ZqzuNJXktKLWpkeGN3a0VaTHM?usp=sharing">
+		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0;width:3em;height:3em;">
+		  			</a>
+		  		</div>
+
+		  		<div class="noteitem">
+		  			<h3 class="itemheader" style="text-align:center;">MATH 131B</h3> 
+		  			<p class="classname">Analysis</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/math.png">
+		  			<p class="term">Fall '19 with Prof. Alberto Chiarini</p> 
+		  			<a target=”_blank” href="https://drive.google.com/drive/folders/1VPVYdoNgdi_UkrnqL_EycEqP6tlds7S6?usp=sharing">
+		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0;width:3em;height:3em;">
+		  			</a>
+		  		</div>
+
+		  		<div class="noteitem">
+		  			<h3 class="itemheader" style="text-align:center;">MATH 132</h3> 
+		  			<p class="classname">Complex Analysis for Applications</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/math.png">
+		  			<p class="term">Fall '19 with Prof. Lincoln Chayes</p> 
+		  			<a target=”_blank” href="https://drive.google.com/drive/folders/15mhukQSEK5nLw9BhdbGG9L0as5UG7ucz?usp=sharing">
+		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0;width:3em;height:3em;">
+		  			</a>
+		  		</div>
+
+		  		<div class="noteitem">
+		  			<h3 class="itemheader" style="text-align:center;">MATH 151A</h3> 
+		  			<p class="classname">Applied Numerical Methods</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/math.png">
+		  			<p class="term">Fall '17 with Prof. Luminița Vese</p> 
+		  			<a target=”_blank” href="https://drive.google.com/file/d/19NYoGAnIBX7oVn1sB8MKsTqbI6zlV1an/view?usp=sharing">
+		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0;width:3em;height:3em;">
+		  			</a>
+		  		</div>
+
+		  		<div class="noteitem">
+		  			<h3 class="itemheader" style="text-align:center;">MATH 151B</h3> 
+		  			<p class="classname">Applied Numerical Methods</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/math.png">
+		  			<p class="term">Spring '19 with Prof. Shay Deutsch</p> 
+		  			<a target=”_blank” href="https://drive.google.com/drive/folders/1PQxoydjoSTSVOlvhEMfnwtpJytepego1?usp=sharing">
+		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0;width:3em;height:3em;">
+		  			</a>
+		  		</div>
+
+		  		<div class="noteitem">
+		  			<h3 class="itemheader" style="text-align:center;">MATH 170A</h3> 
+		  			<p class="classname">Probability Theory</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/math.png">
+		  			<p class="term">Winter '17 with Prof. March Boedihardjo</p> 
+		  			<a target=”_blank” href="https://drive.google.com/drive/folders/0B1ZqzuNJXktKLWpkeGN3a0VaTHM?usp=sharing">
+		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0;width:3em;height:3em;">
+		  			</a>
+		  		</div>
+
+		  		<div class="noteitem">
+		  			<h3 class="itemheader" style="text-align:center;">STATS 100B</h3> 
+		  			<p class="classname">Mathematical Statistics</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/stats.png">
+		  			<p class="term">Summer '17 with Prof. Nicolas Christou</p> 
+		  			<a target=”_blank” href="https://drive.google.com/file/d/0B1ZqzuNJXktKUm96d0lPV3RhWGs/view?usp=sharing">
+		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0;width:3em;height:3em;">
+		  			</a>
+		  		</div>
+
+		  		<div class="noteitem">
+		  			<h3 class="itemheader" style="text-align:center;">STATS 100C</h3> 
+		  			<p class="classname">Linear Models</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/stats.png">
+		  			<p class="term">Summer '20 with Prof. Nicolas Christou</p> 
+		  			<a href="#">
+		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0;width:3em;height:3em;">
+		  			</a>
+		  		</div>
+
+		  		<div class="noteitem">
+		  			<h3 class="itemheader" style="text-align:center;">MATH 156</h3> 
+		  			<p class="classname">Machine Learning</p>
+		  			<hr>
+		  			<img class="classimg" src="../assets/math.png">
+		  			<p class="term">Winter '20 with Prof. Stephanie Wang</p> 
+		  			<a target="_blank" href="https://drive.google.com/file/d/1Twd2LyLHuWmUB36SOHWjghdit_Bz56Kg/view?usp=sharing">
+		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0;width:3em;height:3em;">
 		  			</a>
 		  		</div>
 		  	</div>
@@ -549,21 +716,18 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 	  	
 	  	<div class="line-break"></div>
 	  	<hr>
-	  	
-	  	
-	  	<!-- second row -->
-	  	<div class="row2">
-	  		<!-- category of notes -->
-	  		<div class="category">
+	  	<!--
+	  	<div class="category">
 		  		<div class="image">
-		  			 <img src="./assets/books.png" alt="Error loading graphic!">
+		  			 <img src="./assets/books.png" alt="Error loading graphic!" style="max-width:9em;margin:0 auto">
 		  			 <div class="imagecaption">
 			  			<h2>Textbooks</h2>
 			  		</div>	 
 		  		</div>
-	  		</div>
+  		</div>	
 
-	  		<!--notes -->
+	  	<div class="textbook">
+	  		<!--notes 
 	  		<div class="itemcontainer">
 		  		<div class="noteitem">
 		  			<h3 style="text-align:center;margin:.5em 0;"><i>PRML</i></h3> 
@@ -573,7 +737,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 		  				<img src="../assets/Google-Drive-icon.png" style="padding:0 0;width:40px;height:40px;">
 		  			</a>
 		  		</div>
-		  		<!--notes -->
+		  		<!--notes 
 		  		<div class="noteitem">
 		  			<h3 style="text-align:center;margin:.5em 0;"><i>Deep Learning</i></h3>
 		  			by Ian Goodfellow, et. al.
@@ -585,6 +749,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 		  		</div>
 		  	</div>
 	  	</div>
+	  	-->
   	</div>
 </div>
 
